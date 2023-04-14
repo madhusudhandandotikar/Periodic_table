@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <style>
+      body {
+        
+        background-size: cover;
+        animation: title 10s infinite  linear;
+      }
+      @keyframes title {
+        0% {
+         
+          background-image: url(/360_F_180774167_NAzCipOt2ScaxXJ17qgxpJRQcgG9r2x4.jpg);
+        }
+        25% {
+         
+          background-image: url(/360_F_401648425_Gs8hfhNJDDYJzLQDfYe0w3MkXIIpe5Vl.jpg);
+        }
+        50% {
+        
+          background-image: url(/pngtree-polygonal-chemical-molecule-poster-background-image_125106.jpg);
+        }
+        100% {
+         
+          background-image: url(/pngtree-science-grid-globe-banner-background-image_209974.jpg);
+        }
+      }
+
+      div {
+        border: 4px solid rgb(255, 0, 0);
+        font-size: 120px;
+        position: absolute;
+        top: 38px;
+        background-color: rgba(255, 255, 0, 0.656);
+        border-bottom: none;
+        animation: divbox 10s infinite  linear ;
+        
+        background-size: cover;
+        padding-left: 495px;
+        padding-right: 495px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        left: 4.5px;
+        right: 5px;
+        
+      }
+      @keyframes divbox {
+        0% { color: rgb(188, 17, 17);
+        
+        }
+        25% { color: rgb(43, 200, 137);
+         
+        }
+        50% { color: rgb(15, 149, 156);
+         
+        }   
+        100% { color: rgb(255, 0, 0);
+        }
+        
+      }
+      table {
+        position: absolute;
+        top: 180px;
+        left: 5px;
+        right: 5px;
+        
+        border: 4px solid rgb(255, 0, 0);
+        font-size: 25px;
+        background-size: cover;
+        /* border-radius: 20px; */
+      }
+      td {
+        border: 2px solid rgb(255, 0, 0);
+        text-align: center;
+        width: 100px;
+        border-radius: 10px;
+      }
+      .noBorder {
+        border: none;
+      }
+      .orange {
+        background-color: #ff9966;
+      }
+      .orange:hover{
+        position: fixed;
+        animation-name: scale;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation-direction: alternate;
+        animation-timing-function: ease;
+      }
+
+      .pink {
+        background-color: #dda0dd;
+      }
+
+      .aliceblue {
+        background-color: #90c7ff;
+      }
+
+      .lightbrown {
+        background-color: #e2c6c9;
+      }
+
+      .darkyellow {
+        background-color: #fff28e;
+      }
+
+      .brown {
+        background-color: #c79810;
+      }
+
+      .green {
+        background-color: #cdeb8b;
+      }
+
+      .yellow {
+        background-color: #ebdca9;
+      }
+
+      .silver {
+        background-color: #b1b1e9;
+      }
+
+      .greenElements {
+        color: green;
+      }
+
+      .blueElements {
+        color: blue;
+      }
+
+      .redElements {
+        color: red;
+      }
+
+      .whitebg {
+        background-color: white;
+      }
+
+      #zoomin:hover {
+   
+        animation-name: scale;
+        animation-duration: 1s;
+        animation-iteration-count: infinite; 
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation-direction: alternate;
+        animation-timing-function: ease;
+      }
+
+      @keyframes scale {
+        0% {
+          color: rgb(255, 0, 0);
+         
+          background-color: rgb(15, 215, 215);
+         
+        }
+        100% {transform: scale(1.5);
+          color: rgb(0, 0, 0);
+          background-color: rgb(89, 216, 216);
+          
+        
+        
+        }
+      }
+
+  
+    </style>
+  </head>
+  <body>
+    <table>
+      <div>The Periodic Table</div>
+
+      <tr></tr>
+
+      <tr>
+        <td id="zoomin" class="orange greenElements">1<br />H</td>
+        <td class="noBorder" colspan="16"></td>
+        <td id="zoomin" class="silver greenElements">2<br />He</td>
+      </tr>
+      <tr>
+        <td id="zoomin" class="pink">3<br />Li</td>
+        <td id="zoomin" class="aliceblue">4<br />Be</td>
+        <td class="noBorder" colspan="10"></td>
+        <td id="zoomin" class="brown">5<br />Be</td>
+        <td id="zoomin" class="orange">6<br />C</td>
+        <td id="zoomin" class="orange greenElements">7<br />N</td>
+        <td id="zoomin" class="orange greenElements">8<br />O</td>
+        <td id="zoomin" class="yellow greenElements">9<br />F</td>
+        <td id="zoomin" class="silver greenElements">10<br />Ne</td>
+      </tr>
+      <tr>
+        <td id="zoomin" class="pink">11<br />Na</td>
+        <td id="zoomin" class="aliceblue">12<br />Mg</td>
+        <td class="noBorder" colspan="10"></td>
+        <td id="zoomin" class="green">13<br />Al</td>
+        <td id="zoomin" class="brown">14<br />Si</td>
+        <td id="zoomin" class="orange">15<br />P</td>
+        <td id="zoomin" class="orange">16<br />S</td>
+        <td id="zoomin" class="yellow greenElements">17<br />Cl</td>
+        <td id="zoomin" class="silver greenElements">18<br />Ar</td>
+      </tr>
+      <tr>
+        <td id="zoomin" class="pink">19<br />K</td>
+        <td id="zoomin" class="aliceblue">20<br />Ca</td>
+        <td id="zoomin" class="darkyellow">21<br />Sc</td>
+        <td id="zoomin" class="darkyellow">22<br />Ti</td>
+        <td id="zoomin" class="darkyellow">23<br />V</td>
+        <td id="zoomin" class="darkyellow">24<br />Cr</td>
+        <td id="zoomin" class="darkyellow">25<br />Mn</td>
+        <td id="zoomin" class="darkyellow">26<br />Fe</td>
+        <td id="zoomin" class="darkyellow">27<br />Co</td>
+        <td id="zoomin" class="darkyellow">28<br />Ni</td>
+        <td id="zoomin" class="darkyellow">29<br />Cu</td>
+        <td id="zoomin" class="darkyellow">30<br />Zn</td>
+        <td id="zoomin" class="green blueElements">31<br />Ga</td>
+        <td id="zoomin" class="brown">32<br />Ge</td>
+        <td id="zoomin" class="brown">33<br />As</td>
+        <td id="zoomin" class="orange">34<br />Se</td>
+        <td id="zoomin" class="yellow blueElements">35<br />Br</td>
+        <td id="zoomin" class="silver greenElements">36<br />Kr</td>
+      </tr>
+      <tr>
+        <td id="zoomin" class="pink">37<br />Rb</td>
+        <td id="zoomin" class="aliceblue">38<br />Sr</td>
+        <td id="zoomin" class="darkyellow">39<br />Y</td>
+        <td id="zoomin" class="darkyellow">40<br />Zr</td>
+        <td id="zoomin" class="darkyellow">41<br />Nb</td>
+        <td id="zoomin" class="darkyellow">42<br />Mo</td>
+        <td id="zoomin" class="darkyellow">43<br />Tc</td>
+        <td id="zoomin" class="darkyellow">44<br />Ru</td>
+        <td id="zoomin" class="darkyellow">45<br />Rh</td>
+        <td id="zoomin" class="darkyellow">46<br />Pd</td>
+        <td id="zoomin" class="darkyellow">47<br />Ag</td>
+        <td id="zoomin" class="darkyellow">48<br />Cd</td>
+        <td id="zoomin" class="green">49<br />In</td>
+        <td id="zoomin" class="green">50<br />Sn</td>
+        <td id="zoomin" class="brown">51<br />Sb</td>
+        <td id="zoomin" class="brown">52<br />Te</td>
+        <td id="zoomin" class="yellow">53<br />I</td>
+        <td id="zoomin" class="silver greenElements">54<br />Xe</td>
+      </tr>
+      <tr>
+        <td id="zoomin" class="pink blueElements">55<br />Cs</td>
+        <td id="zoomin" class="aliceblue">56<br />Ba</td>
+        <td id="zoomin" class="lightbrown">57-71<br />&nbsp;</td>
+        <td id="zoomin" class="darkyellow">72<br />Hf</td>
+        <td id="zoomin" class="darkyellow">73<br />Ta</td>
+        <td id="zoomin" class="darkyellow">74<br />W</td>
+        <td id="zoomin" class="darkyellow">75<br />Re</td>
+        <td id="zoomin" class="darkyellow">76<br />Os</td>
+        <td id="zoomin" class="darkyellow">77<br />Ir</td>
+        <td id="zoomin" class="darkyellow">78<br />Pt</td>
+        <td id="zoomin" class="darkyellow">79<br />Au</td>
+        <td id="zoomin" class="darkyellow blueElements">80<br />Hg</td>
+        <td id="zoomin" class="green">81<br />Tl</td>
+        <td id="zoomin" class="green">82<br />Pb</td>
+        <td id="zoomin" class="green">83<br />Bi</td>
+        <td id="zoomin" class="brown">84<br />Po</td>
+        <td id="zoomin" class="yellow">85<br />At</td>
+        <td id="zoomin" class="silver greenElements">86<br />Rn</td>
+      </tr>
+      <tr>
+        <td id="zoomin" class="pink blueElements">87<br />Fr</td>
+        <td id="zoomin" class="aliceblue">88<br />Ra</td>
+        <td id="zoomin" class="lightbrown">89-103<br />&nbsp;</td>
+        <td id="zoomin" class="darkyellow redElements">104<br />Rf</td>
+        <td id="zoomin" class="darkyellow redElements">105<br />Db</td>
+        <td id="zoomin" class="darkyellow redElements">106<br />Sg</td>
+        <td id="zoomin" class="darkyellow redElements">107<br />Bh</td>
+        <td id="zoomin" class="darkyellow redElements">108<br />Hs</td>
+        <td id="zoomin" class="darkyellow redElements">109<br />Mt</td>
+        <td id="zoomin" class="darkyellow redElements">110<br />Ds</td>
+        <td id="zoomin" class="darkyellow redElements">111<br />Rg</td>
+        <td id="zoomin" class="darkyellow redElements">112<br />Cn</td>
+        <td id="zoomin" class="redElements whitebg">113<br />Nh</td>
+        <td id="zoomin" class="redElements whitebg">114<br />Fl</td>
+        <td id="zoomin" class="redElements whitebg">115<br />Mc</td>
+        <td id="zoomin" class="redElements whitebg">116<br />Lv</td>
+        <td id="zoomin" class="redElements whitebg">117<br />Ts</td>
+        <td id="zoomin" class="redElements whitebg">118<br />Og</td>
+      </tr>
+      <tr>
+        <td id="zoomin" class="noBorder"></td>
+      </tr>
+      <tr>
+        <td class="noBorder" colspan="2" rowspan="2"></td>
+        <td id="zoomin" class="lightbrown">57<br />La</td>
+        <td id="zoomin" class="lightbrown">58<br />Ce</td>
+        <td id="zoomin" class="lightbrown">59<br />Pr</td>
+        <td id="zoomin" class="lightbrown">60<br />Nd</td>
+        <td id="zoomin" class="lightbrown redElements">61<br />Pm</td>
+        <td id="zoomin" class="lightbrown">62<br />Sm</td>
+        <td id="zoomin" class="lightbrown">63<br />Eu</td>
+        <td id="zoomin" class="lightbrown">64<br />Gd</td>
+        <td id="zoomin" class="lightbrown">65<br />Tb</td>
+        <td id="zoomin" class="lightbrown">66<br />Dy</td>
+        <td id="zoomin" class="lightbrown">67<br />Ho</td>
+        <td id="zoomin" class="lightbrown">68<br />Er</td>
+        <td id="zoomin" class="lightbrown">69<br />Tm</td>
+        <td id="zoomin" class="lightbrown">70<br />Yb</td>
+        <td id="zoomin" class="lightbrown">71<br />Lu</td>
+        <td class="noBorder" colspan="1" rowspan="1"></td>
+      </tr>
+      <tr>
+        <td id="zoomin" class="lightbrown">89<br />Ac</td>
+        <td id="zoomin" class="lightbrown">90<br />Th</td>
+        <td id="zoomin" class="lightbrown">91<br />Pa</td>
+        <td id="zoomin" class="lightbrown">92<br />U</td>
+        <td id="zoomin" class="lightbrown redElements">93<br />Np</td>
+        <td id="zoomin" class="lightbrown redElements">94<br />Pu</td>
+        <td id="zoomin" class="lightbrown redElements">95<br />Am</td>
+        <td id="zoomin" class="lightbrown redElements">96<br />Cm</td>
+        <td id="zoomin" class="lightbrown redElements">97<br />Bk</td>
+        <td id="zoomin" class="lightbrown redElements">98<br />Cf</td>
+        <td id="zoomin" class="lightbrown redElements">99<br />Es</td>
+        <td id="zoomin" class="lightbrown redElements">100<br />Fm</td>
+        <td id="zoomin" class="lightbrown redElements">101<br />Md</td>
+        <td id="zoomin" class="lightbrown redElements">102<br />No</td>
+        <td id="zoomin" class="lightbrown redElements">103<br />Lr</td>
+      </tr>
+    </table>
+  </body>
+</html>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
